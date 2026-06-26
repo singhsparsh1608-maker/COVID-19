@@ -15,7 +15,7 @@ ASSETS_FOLDER = os.path.join(BASE_DIR, "assets")
 
 TABLEAU_IMAGE = os.path.join(
     ASSETS_FOLDER,
-'/Users/sparshsingh/Desktop/JOB/PROJECTS/PROJECT 1/CODES/Screenshot 2026-06-26 at 1.42.41 PM.png'
+'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/Screenshot%202026-06-26%20at%201.42.41%E2%80%AFPM%20copy.png'
 )
 
 st.set_page_config(
@@ -177,7 +177,7 @@ elif selected=="Load Data":
 
     deaths_path=os.path.join(
         DATA_FOLDER,
-        '/Users/sparshsingh/Desktop/JOB/PROJECTS/PROJECT 1/DATA/CovidDeaths 4 SPLIT.csv'
+        'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx'
     )
 
     if os.path.exists(deaths_path):
@@ -249,7 +249,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, '/Users/sparshsingh/Desktop/JOB/PROJECTS/PROJECT 1/DATA/CovidDeaths 4 SPLIT.csv')
+        os.path.join(DATA_FOLDER, 'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx')
     )
 
     st.dataframe(
@@ -327,7 +327,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, '/Users/sparshsingh/Desktop/JOB/PROJECTS/PROJECT 1/DATA/CovidDeaths 4 SPLIT.csv')
+        os.path.join(DATA_FOLDER, 'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx')
     )
 
     st.dataframe(
@@ -412,7 +412,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.5.csv")
+        os.path.join(DATA_FOLDER, "https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
     )
 
     st.dataframe(
@@ -455,7 +455,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.6.csv")
+        os.path.join(DATA_FOLDER, "https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
     )
 
     st.dataframe(
@@ -500,7 +500,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.7.csv")
+        os.path.join(DATA_FOLDER, "https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
     )
 
     st.dataframe(
@@ -543,7 +543,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.8.csv")
+        os.path.join(DATA_FOLDER, "https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
     )
 
     st.dataframe(
@@ -586,7 +586,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.9.csv")
+        os.path.join(DATA_FOLDER, 'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx')
     )
 
     st.dataframe(
@@ -626,7 +626,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.10.csv")
+        os.path.join(DATA_FOLDER, "https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
     )
 
     st.dataframe(
@@ -666,7 +666,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.11.csv")
+        os.path.join(DATA_FOLDER, "https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
     )
 
     st.dataframe(
@@ -712,7 +712,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.12.csv")
+        os.path.join(DATA_FOLDER, "Shttps://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
     )
 
     st.dataframe(
@@ -768,7 +768,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.13.csv")
+        os.path.join(DATA_FOLDER, "https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
     )
 
     st.dataframe(
@@ -848,7 +848,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "SQL_RES.14.csv")
+        os.path.join(DATA_FOLDER, "https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
     )
 
     st.dataframe(
