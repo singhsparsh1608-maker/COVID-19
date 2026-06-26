@@ -2,7 +2,6 @@ import os
 import sqlite3
 import pandas as pd
 import streamlit as st
-from streamlit_option_menu import option_men
 
 # ================================
 # CONFIGURATION
@@ -42,12 +41,11 @@ except:
 # ================================
 
 with st.sidebar:
+    st.title("📊 COVID ANALYSIS")
 
-    selected = option_menu(
-
-        menu_title="COVID ANALYSIS",
-
-        options=[
+    selected = st.radio(
+        "Navigation",
+        [
             "Home",
             "Load Data",
             "SQL Analysis",
@@ -55,20 +53,7 @@ with st.sidebar:
             "Insights",
             "About"
         ],
-
-        icons=[
-            "house",
-            "database",
-            "server",
-            "bar-chart",
-            "graph-up",
-            "info-circle"
-        ],
-
-        menu_icon="activity",
-
-        default_index=0
-
+        index=0
     )
 
 # ==========================================
