@@ -2,3 +2,5 @@ streamlit
 pandas
 numpy
 streamlit-option-menu
+os
+option_men
