@@ -14,7 +14,7 @@ ASSETS_FOLDER = os.path.join(BASE_DIR, "assets")
 
 TABLEAU_IMAGE = os.path.join(
     ASSETS_FOLDER,
-'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/Screenshot%202026-06-26%20at%201.42.41%E2%80%AFPM%20copy.png'
+'Screenshot 2026-06-26 at 1.42.41 PM copy.png'
 )
 
 st.set_page_config(
