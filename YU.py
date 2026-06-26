@@ -14,7 +14,7 @@ ASSETS_FOLDER = os.path.join(BASE_DIR, "assets")
 
 TABLEAU_IMAGE = os.path.join(
     ASSETS_FOLDER,
-'Screenshot 2026-06-26 at 1.42.41 PM copy.png'
+"r'Screenshot 2026-06-26 at 1.42.41 PM copy.png"
 )
 
 st.set_page_config(
