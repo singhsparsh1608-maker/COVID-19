@@ -618,7 +618,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, "https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx")
+        os.path.join(DATA_FOLDER, "CovidDeathsMERGE.csv")
     )
 
     st.dataframe(
