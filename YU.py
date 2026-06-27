@@ -185,7 +185,7 @@ elif selected=="Load Data":
 
     vaccine_path=os.path.join(
         DATA_FOLDER,
-        '/Users/sparshsingh/Desktop/JOB/PROJECTS/PROJECT 1/DATA/CovidVacination SPLIT.csv'
+        'DATA/CovidVacinationSPLIT.csv'
     )
 
     if os.path.exists(vaccine_path):
@@ -234,7 +234,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, 'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx')
+        os.path.join(DATA_FOLDER, 'DATA/CovidDeaths.xlsx')
     )
 
     st.dataframe(
@@ -271,7 +271,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, '/Users/sparshsingh/Desktop/JOB/PROJECTS/PROJECT 1/DATA/CovidVacination SPLIT.csv')
+        os.path.join(DATA_FOLDER, 'DATA/CovidVacinationSPLIT.csv)
     )
 
     st.dataframe(
