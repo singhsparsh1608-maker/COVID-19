@@ -2,7 +2,6 @@ import os
 import sqlite3
 import pandas as pd
 import streamlit as st
-from streamlit_option_menu import option_men
 
 # ================================
 # CONFIGURATION
@@ -15,7 +14,7 @@ ASSETS_FOLDER = os.path.join(BASE_DIR, "assets")
 
 TABLEAU_IMAGE = os.path.join(
     ASSETS_FOLDER,
-'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/Screenshot%202026-06-26%20at%201.42.41%E2%80%AFPM%20copy.png'
+'dashboard.png'
 )
 
 st.set_page_config(
@@ -42,12 +41,11 @@ except:
 # ================================
 
 with st.sidebar:
+    st.title("📊 COVID ANALYSIS")
 
-    selected = option_menu(
-
-        menu_title="COVID ANALYSIS",
-
-        options=[
+    selected = st.radio(
+        "Navigation",
+        [
             "Home",
             "Load Data",
             "SQL Analysis",
@@ -55,20 +53,7 @@ with st.sidebar:
             "Insights",
             "About"
         ],
-
-        icons=[
-            "house",
-            "database",
-            "server",
-            "bar-chart",
-            "graph-up",
-            "info-circle"
-        ],
-
-        menu_icon="activity",
-
-        default_index=0
-
+        index=0
     )
 
 # ==========================================
@@ -177,7 +162,7 @@ elif selected=="Load Data":
 
     deaths_path=os.path.join(
         DATA_FOLDER,
-        'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx'
+        'DATA/CovidDeaths.xlsx'
     )
 
     if os.path.exists(deaths_path):
@@ -200,7 +185,7 @@ elif selected=="Load Data":
 
     vaccine_path=os.path.join(
         DATA_FOLDER,
-        '/Users/sparshsingh/Desktop/JOB/PROJECTS/PROJECT 1/DATA/CovidVacination SPLIT.csv'
+        'DATA/CovidVacinationSPLIT.csv'
     )
 
     if os.path.exists(vaccine_path):
@@ -249,7 +234,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, 'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx')
+        os.path.join(DATA_FOLDER, 'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths4SPLIT.csv')
     )
 
     st.dataframe(
@@ -286,7 +271,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, '/Users/sparshsingh/Desktop/JOB/PROJECTS/PROJECT 1/DATA/CovidVacination SPLIT.csv')
+        os.path.join(DATA_FOLDER, 'DATA/CovidVacinationSPLIT.csv')
     )
 
     st.dataframe(
