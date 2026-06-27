@@ -162,7 +162,7 @@ elif selected=="Load Data":
 
     deaths_path=os.path.join(
         DATA_FOLDER,
-        'https://github.com/singhsparsh1608-maker/COVID-19/blob/main/DATA/CovidDeaths.xlsx%20PRO1.xlsx'
+        'DATA/CovidDeaths.xlsx'
     )
 
     if os.path.exists(deaths_path):
