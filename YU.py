@@ -9,13 +9,18 @@ import streamlit as st
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-DATA_FOLDER = os.path.join(BASE_DIR, "data")
+# DATA_FOLDER = os.path.join(BASE_DIR, "data")
+
+# Path to the data folder inside 'project1'
+DATA_FOLDER = os.path.join(BASE_DIR, "project1", "data")
+
 ASSETS_FOLDER = os.path.join(BASE_DIR, "assets")
 
-TABLEAU_IMAGE = os.path.join(
-    ASSETS_FOLDER,
-'dashboard.png'
-)
+# TABLEAU_IMAGE = os.path.join(
+#     ASSETS_FOLDER,
+# 'dashboard.png'
+# )
+TABLEAU_IMAGE = os.path.join(BASE_DIR, "dashboard.png")
 
 st.set_page_config(
     page_title="COVID-19 Analysis",
