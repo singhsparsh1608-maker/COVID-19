@@ -233,9 +233,11 @@ elif selected=="SQL Analysis":
 
     st.subheader("Output")
 
-    df = pd.read_csv(
-        os.path.join(DATA_FOLDER, 'PROJECT 1/DATA/coviddeaths.csv')
-    )
+    # df = pd.read_csv(
+    #     os.path.join(DATA_FOLDER, 'PROJECT 1/DATA/coviddeaths.csv')
+    # )
+
+    df = pd.read_csv('PROJECT 1/DATA/coviddeaths.csv')
 
     st.dataframe(
         df,
