@@ -271,7 +271,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join(DATA_FOLDER, 'DATA/CovidVacinationSPLIT.csv)
+        os.path.join(DATA_FOLDER, 'DATA/CovidVacinationSPLIT.csv')
     )
 
     st.dataframe(
