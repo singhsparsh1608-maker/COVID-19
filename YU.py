@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # DATA_FOLDER = os.path.join(BASE_DIR, "data")
 
 # Path to the data folder inside 'project1'
-DATA_FOLDER = os.path.join(BASE_DIR, "project1", "data")
+DATA_FOLDER = os.path.join(BASE_DIR, "PROJECT 1", "DATA")
 
 ASSETS_FOLDER = os.path.join(BASE_DIR, "assets")
 
@@ -278,7 +278,7 @@ elif selected=="SQL Analysis":
     st.subheader("Output")
 
     df = pd.read_csv(
-        os.path.join('https://github.com/singhsparsh1608-maker/COVID-19/tree/main', 'PROJECT 1/DATA/CovidVacinationSPLIT.csv')
+        os.path.join(DATA_FOLDER, 'covidvacination.csv')
     )
 
     st.dataframe(
