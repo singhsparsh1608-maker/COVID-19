@@ -167,7 +167,7 @@ elif selected=="Load Data":
 
     deaths_path=os.path.join(
         DATA_FOLDER,
-        'DATA/CovidDeaths.xlsx'
+        'coviddeaths.csv'
     )
 
     if os.path.exists(deaths_path):
@@ -190,7 +190,7 @@ elif selected=="Load Data":
 
     vaccine_path=os.path.join(
         DATA_FOLDER,
-        'DATA/CovidVacinationSPLIT.csv'
+        'covidvacination.csv'
     )
 
     if os.path.exists(vaccine_path):
@@ -783,47 +783,6 @@ elif selected=="SQL Analysis":
 
 
     #part 5
-
-    # ==========================================================
-    # QUERY 14
-    # ==========================================================
-
-    st.header("Query 15 : Create View for Tableau")
-
-    sql_query = """
-    CREATE VIEW PERCENTAGEPOPULATION AS
-
-    SELECT
-    dea.continent,
-    dea.location,
-    dea.date,
-    dea.population,
-    vac.new_vaccinations,
-
-    SUM(vac.new_vaccinations)
-    OVER
-    (
-    PARTITION BY dea.location
-    ORDER BY dea.location,dea.date
-    )
-
-    AS TOTAL_VACCINATION
-
-    FROM `coviddeaths 4(coviddeaths)` dea
-
-    JOIN `coviddeaths vacination(coviddeaths)` vac
-
-    ON dea.location=vac.location
-    AND dea.date=vac.date;
-    """
-
-    st.code(sql_query, language="sql")
-
-    st.info("""
-    This SQL View was created to store the processed vaccination data,
-    making it easier to connect Tableau and build interactive dashboards.
-    """)
-
 # ==========================================================
 # TABLEAU PAGE
 # ==========================================================
