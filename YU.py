@@ -783,64 +783,9 @@ elif selected=="SQL Analysis":
 
 
     #part 5
-    # ==========================================================
-   # QUERY 14
-# ==========================================================
-
-st.header("Query 14 : Population vs Vaccination using CTE")
-
-sql_query = """
-WITH popvsvac AS (
-    SELECT
-        dea.continent,
-        dea.location,
-        dea.date,
-        dea.population,
-        vac.new_vaccinations,
-        SUM(vac.new_vaccinations) OVER (
-            PARTITION BY dea.location
-            ORDER BY dea.location, dea.date
-        ) AS TOTAL_VACCINATION
-    FROM `coviddeaths 4(coviddeaths)` dea
-    JOIN `coviddeaths vacination(coviddeaths)` vac
-        ON dea.location = vac.location
-        AND dea.date = vac.date
-)
-SELECT
-    *,
-    (TOTAL_VACCINATION / population) * 100 AS PERCENTAGE_OF_VAC
-FROM popvsvac;
-"""
-
-st.code(sql_query, language="sql")
-
-st.subheader("Output")
-
-# Assuming you will run this query on your database and fetch the results
-# For now, reading a sample CSV as placeholder
-df = pd.read_csv(
-    os.path.join(DATA_FOLDER, "CovidDeathsMERGE.csv")
-)
-
-st.dataframe(
-    df,
-    use_container_width=True,
-    height=500
-)
-
-st.success("""
-Findings:
-
-• Used a Common Table Expression (CTE).
-• Calculated cumulative vaccinations.
-• Computed vaccination percentage.
-• Prepared data for Tableau visualization.
-""")
-
-st.divider()
 
     # ==========================================================
-    # QUERY 15
+    # QUERY 14
     # ==========================================================
 
     st.header("Query 15 : Create View for Tableau")
