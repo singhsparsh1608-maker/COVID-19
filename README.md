@@ -25,15 +25,6 @@ This project analyzes global **COVID-19** data using **SQL**, **Python**, and **
 * Streamlit
 * Git & GitHub
 
-##  Project Files
-
-📁 data/        → COVID-19 datasets
-📁 sql/         → SQL queries for analysis
-📁 assets/      → Images and project resources
-📄 app.py       → Streamlit dashboard
-📄 README.md
-
-
 ##  Key Takeaway
 
 This project showcases an end-to-end data analysis workflow, from cleaning and querying large datasets to building an interactive dashboard that helps visualize the global impact of COVID-19.
